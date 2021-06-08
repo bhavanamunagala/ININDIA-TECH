@@ -1,0 +1,42 @@
+.custominput {
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  margin: 0.5rem 0;
+}
+.input {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 2.8rem;
+  position: relative;
+  border: 1.5px solid gray;
+  border-radius: 1rem;
+  padding: 0 1rem;
+  margin: 0.5rem 0;
+}
+
+.logo {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  right: 15px;
+  top: 1.2rem;
+}
+
+.input:hover,
+.input:active {
+  border: 1.5px solid #ff6000;
+  background-color: #ff62002c;
+}
+
+.input:focus-visible {
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    top: 1.2rem;
+  }
+}

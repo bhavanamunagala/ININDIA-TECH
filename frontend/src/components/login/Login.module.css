@@ -1,0 +1,99 @@
+.login {
+  height: 96vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+.loginImage {
+  width: 50%;
+}
+
+.divider {
+  border-left: 0.4px solid rgb(61, 58, 58);
+  padding: 0 1rem;
+  height: 70vh;
+  display: none;
+}
+
+.loginDetails {
+  width: 90%;
+}
+.logoDiv {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  display: none;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.loginDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginButton {
+  margin: 1.4rem 0;
+  height: 3rem;
+  background-color: #ff6000;
+  border: 1.8px solid #ff6000;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: white;
+}
+
+.loginButton:hover,
+.loginButton:active {
+  background-color: white;
+  color: #ff6000;
+  cursor: pointer;
+}
+
+.forgetButton {
+  color: black;
+  font-weight: 400;
+  margin: 0.5rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+.forgetButton:hover,
+.forgetButton:active {
+  color: rgba(32, 31, 31, 0.877);
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .login {
+    flex-direction: row;
+    height: 100vh;
+    padding: 0;
+  }
+  .loginImage {
+    width: 30%;
+  }
+
+  .divider {
+    display: block;
+  }
+  .loginDetails {
+    width: 40%;
+  }
+  .logo {
+    display: block;
+  }
+  .title {
+    text-align: start;
+  }
+}
